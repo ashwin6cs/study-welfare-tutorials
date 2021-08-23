@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>HTML - Email Links</title>
+<link rel="shortcut icon" sizes="200*200" type="image/x-icon" href="logo1.jpg"></head>
+<body style="background-color: aliceblue;color:rgb(90, 46, 194)">
+<h2>HTML - Email Links</h2>
+<div class="clearer"></div>
+<p>It is not difficult to put an HTML email link on your webpage but it can cause unnecessary spamming problem for your email account. There are people, who can run programs to harvest these types of emails and later use them for spamming in various ways.</p>
+<p>You can have another option to facilitate people to send you emails. One option could be to use HTML forms to collect user data and then use PHP or CGI script to send an email.</p>
+<p><b>Note</b> &minus; You will learn about HTML Forms in <a target="_blank" href="f12.html">HTML Forms</a> and you will learn about CGI in our another tutorial <a target="_blank" href="https://www.geeksforgeeks.org/perl-cgi-programming/"><b>Perl CGI Programming</b></a>.</p>
+<h2>HTML Email Tag</h2>
+<p>HTML <b>&lt;a&gt;</b> tag provides you option to specify an email address to send an email. While using &lt;a&gt; tag as an email tag, you will use <b>mailto: email address</b> along with <i>href</i> attribute. Following is the syntax of using <b>mailto</b> instead of using http.</p>
+<pre style="background-color:azure; class="result notranslate">
+&lt;a href = "mailto: ashwin6cs@gmail.com"&gt;Send Email&lt;/a&gt;
+</pre>
+
+<pre style="background-color:azure; class="result notranslate"></pre>
+<a href="mailto:ashwin6cs@gmail.com" ><button>Send Email</button></a> 
+
+<p>Now, if a user clicks this link, it launches one Email Client (like Lotus Notes, Outlook Express etc. ) installed on your user's computer. There is another risk to use this option to send email because if user do not have email client installed on their computer then it would not be possible to send email.</p>
+<h2>Default Settings</h2>
+<p>You can specify a default <i>email subject</i> and <i>email body</i> along with your email address. Following is the example to use default subject and body.</p>
+<pre style="background-color:azure; class="result notranslate">
+&lt;a href = "mailto:ashwin6cs@gmail.com?subject = Feedback&amp;body = Message"&gt;
+Send Feedback
+&lt;/a&gt;
+</pre>
+
+</body>
+</html>

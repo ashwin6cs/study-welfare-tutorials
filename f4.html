@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>HTML - Comments</title>
+<link rel="shortcut icon" sizes="200*200" type="image/x-icon" href="logo1.jpg"></head>
+<body style="background-color: aliceblue;color:rgb(90, 46, 194)">
+<h1>HTML - Comments</h1>
+<div class="clearer"></div>
+<p>Comment is a piece of code which is ignored by any web browser. It is a good practice to add comments into your HTML code, especially in complex documents, to indicate sections of a document, and any other notes to anyone looking at the code. Comments help you and others understand your code and increases code readability.</p>
+<p>HTML comments are placed in between <b>&lt;!-- ... --&gt;</b> tags. So, any content placed with-in &lt;!-- ... --&gt; tags will be treated as comment and will be completely ignored by the browser.</p>
+<h3>Example</h3>
+
+<pre style="background-color:azure; class="prettyprint notranslate">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+   &lt;head&gt;  &lt;!-- Document Header Starts --&gt;
+      &lt;title&gt;This is document title&lt;/title&gt;
+   &lt;/head&gt; &lt;!-- Document Header Ends --&gt;
+	
+   &lt;body&gt;
+      &lt;p&gt;Document content goes here.....&lt;/p&gt;
+   &lt;/body&gt;
+	
+&lt;/html&gt;
+</pre>
+</div>
+<a target="_blank" href="f4-1.html" class="w3-btn w3-margin-bottom"><button style="background-color:rgb(115, 126, 226);">Try it Yourself</button> &raquo;</a>
+</div>
+<h2>Valid vs Invalid Comments</h2>
+<p>Comments do not nest which means a comment cannot be put inside another comment. Second the double-dash sequence "--" may not appear inside a comment except as part of the closing --&gt; tag. You must also make sure that there are no spaces in the start-of comment string.</p>
+<h3>Example</h3>
+<p>Here, the given comment is a valid comment and will be wiped off by the browser.</p>
+
+<pre style="background-color:azure; class="prettyprint notranslate">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+   &lt;head&gt;
+      &lt;title&gt;Valid Comment Example&lt;/title&gt;
+   &lt;/head&gt;
+	
+   &lt;body&gt;
+      &lt;!--   This is valid comment --&gt;
+      &lt;p&gt;Document content goes here.....&lt;/p&gt;
+   &lt;/body&gt;
+	
+&lt;/html&gt;
+</pre>
+</div>
+<a target="_blank" href="f4-2.html" class="w3-btn w3-margin-bottom"><button style="background-color:rgb(115, 126, 226);">Try it Yourself</button> &raquo;</a>
+</div>
+<p>But, following line is not a valid comment and will be displayed by the browser. This is because there is a space between the left angle bracket and the exclamation mark.</p>
+
+<pre style="background-color:azure; class="prettyprint notranslate">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+   &lt;head&gt;  
+      &lt;title&gt;Invalid Comment Example&lt;/title&gt;
+   &lt;/head&gt;
+	
+   &lt;body&gt;
+      &lt; !--   This is not a valid comment --&gt;
+      &lt;p&gt;Document content goes here.....&lt;/p&gt;
+   &lt;/body&gt;
+	
+&lt;/html&gt;
+</pre>
+</div>
+<a target="_blank" href="f4-3.html" class="w3-btn w3-margin-bottom"><button style="background-color:rgb(115, 126, 226);">Try it Yourself</button> &raquo;</a>
+</div>
+<h2>Multiline Comments</h2>
+<p>So far we have seen single line comments, but HTML supports multi-line comments as well.</p>
+<p>You can comment multiple lines by the special beginning tag &lt;!-- and ending tag --&gt; placed before the first line and end of the last line as shown in the given example below.</p>
+<h3>Example</h3>
+
+<pre style="background-color:azure; class="prettyprint notranslate">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+   &lt;head&gt;  
+      &lt;title&gt;Multiline Comments&lt;/title&gt;
+   &lt;/head&gt; 
+	
+   &lt;body&gt;
+      &lt;!-- 
+         This is a multiline comment and it can
+         span through as many as lines you like.
+      --&gt;
+      
+      &lt;p&gt;Document content goes here.....&lt;/p&gt;
+   &lt;/body&gt;
+	
+&lt;/html&gt;
+</pre>
+</div>
+<a target="_blank" href="f4-4.html" class="w3-btn w3-margin-bottom"><button style="background-color:rgb(115, 126, 226);">Try it Yourself</button> &raquo;</a>
+</div>
+<h2>Conditional Comments</h2>
+<p>Conditional comments only work in Internet Explorer (IE) on Windows but they are ignored by other browsers. They are supported from Explorer 5 onwards, and you can use them to give conditional instructions to different versions of IE.</p>
+<h3>Example</h3>
+
+<pre style="background-color:azure; class="prettyprint notranslate">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+   &lt;head&gt;  
+      &lt;title&gt;Conditional Comments&lt;/title&gt;
+
+      &lt;!--[if IE 6]&gt;
+         Special instructions for IE 6 here
+      &lt;![endif]--&gt;
+   &lt;/head&gt; 
+   
+   &lt;body&gt;
+      &lt;p&gt;Document content goes here.....&lt;/p&gt;
+   &lt;/body&gt;
+	
+&lt;/html&gt;
+</pre>
+<p>You will come across a situation where you will need to apply a different style sheet based on different versions of Internet Explorer, in such situation conditional comments will be helpful.</p>
+</div>
+<a target="_blank" href="f4-5.html" class="w3-btn w3-margin-bottom"><button style="background-color:rgb(115, 126, 226);">Try it Yourself</button> &raquo;</a>
+</div>
+<h2>Using Comment Tag</h2>
+<p>There are few browsers that support &lt;comment&gt; tag to comment a part of HTML code.</p>
+<blockquote><p><b>Note</b> &minus; The &lt;comment&gt; tag deprecated in HTML5. Do not use this element.</p></blockquote>
+<h3>Example</h3>
+
+<pre style="background-color:azure; class="prettyprint notranslate">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+   &lt;head&gt;
+      &lt;title&gt;Using Comment Tag&lt;/title&gt;
+   &lt;/head&gt;
+	
+   &lt;body&gt;
+      &lt;p&gt;This is &lt;comment&gt;not&lt;/comment&gt; Internet Explorer.&lt;/p&gt;
+   &lt;/body&gt;
+	
+&lt;/html&gt;
+</pre>
+</div>
+<a target="_blank" href="f4-6.html" class="w3-btn w3-margin-bottom"><button style="background-color:rgb(115, 126, 226);">Try it Yourself</button> &raquo;</a>
+</div>
+<h2>Commenting Script Code</h2>
+<p>Though you will learn JavaScript with HTML, in a separate tutorial, but here you must make a note that if you are using Java Script or VB Script in your HTML code then it is recommended to put that script code inside proper HTML comments so that old browsers can work properly.</p>
+<h3>Example</h3>
+
+<pre style="background-color:azure; class="prettyprint notranslate">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+   &lt;head&gt;
+      &lt;title&gt;Commenting Script Code&lt;/title&gt;
+      
+      &lt;script&gt;
+         &lt;!-- 
+            document.write("Hello World!")
+         //--&gt;
+      &lt;/script&gt;
+   &lt;/head&gt;
+	
+   &lt;body&gt;
+      &lt;p&gt;Hello , World!&lt;/p&gt;
+   &lt;/body&gt;
+	
+&lt;/html&gt;
+</pre>
+</div>
+<a target="_blank" href="f4-7.html" class="w3-btn w3-margin-bottom"><button style="background-color:rgb(115, 126, 226);">Try it Yourself</button> &raquo;</a>
+</div>
+<h2>Commenting Style Sheets</h2>
+<p>Though you will learn using style sheets with HTML in a separate tutorial, but here you must make a note that if you are using Cascading Style Sheet (CSS) in your HTML code then it is recommended to put that style sheet code inside proper HTML comments so that old browsers can work properly.</p>
+<h3>Example</h3>
+
+<pre style="background-color:azure; class="prettyprint notranslate">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+   &lt;head&gt;
+      &lt;title&gt;Commenting Style Sheets&lt;/title&gt;
+      
+      &lt;style&gt;
+         &lt;!--
+            .example {
+               border:1px solid #4a7d49;
+            }
+         //--&gt;
+      &lt;/style&gt;
+   &lt;/head&gt;
+	
+   &lt;body&gt;
+      &lt;div class = "example"&gt;Hello , World!&lt;/div&gt;
+   &lt;/body&gt;
+	
+&lt;/html&gt;
+</pre>
+</div>
+<a target="_blank" href="f4-8.html" class="w3-btn w3-margin-bottom"><button style="background-color:rgb(115, 126, 226);">Try it Yourself</button> &raquo;</a>
+</div>
+</body>
+</html>

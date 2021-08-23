@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+   <title>HTML - Attributes</title>
+   <link rel="shortcut icon" sizes="200*200" type="image/x-icon" href="logo1.jpg"></head>
+<body style="background-color: aliceblue; color:rgb(90, 46, 194);">
+<div class="mui-col-md-6 tutorial-content">
+<h1>HTML - Attributes</h1>
+<script>
+     var adPos = document.getElementById('adp_top_ads');
+     var ad_id_720 = "8014640d-fd34-4b2e-9b1b-cc67234a2325";
+     var ad_id_650 = "2d1bb2c4-eb72-471d-9c80-1bf5514728c1";
+     var ad_id_300 = "df94a1a9-ae2f-432d-9a92-d93823ff4503";
+     var width = window.innerWidth;
+     var ad_id = ad_id_720;
+     if( width <= 768 ){
+        ad_id =  ad_id_300;
+     }else if( width <= 1435 ){
+        ad_id =  ad_id_650;
+     }
+     adPos.innerHTML = '<div id="' + ad_id + '" class="_ap_apex_ad"></div>';
+     var adpushup = adpushup || {};
+     adpushup.que = adpushup.que || [];
+     adpushup.que.push(function() {
+     adpushup.triggerAd(ad_id);
+     });
+</script>
+</div>
+</div>
+<br>
+<div class="clearer"></div>
+<p>We have seen few HTML tags and their usage like heading tags <b>&lt;h1&gt;, &lt;h2&gt;,</b> paragraph tag <b>&lt;p&gt;</b> and other tags. We used them so far in their simplest form, but most of the HTML tags can also have attributes, which are extra bits of information.</p> 
+<p>An attribute is used to define the characteristics of an HTML element and is placed inside the element's opening tag. All attributes are made up of two parts &minus; a <b>name</b> and a <b>value</b></p>
+<ul class="list">
+<li><p>The <b>name</b> is the property you want to set. For example, the paragraph <b>&lt;p&gt;</b> element in the example carries an attribute whose name is <b>align</b>, which you can use to indicate the alignment of paragraph on the page.</p></li>
+<li><p>The <b>value</b> is what you want the value of the property to be set and always put within quotations. The below example shows three possible values of align attribute: <b> left, center</b> and <b>right</b>.</p></li>
+</ul>
+<p>Attribute names and attribute values are case-insensitive. However, the World Wide Web Consortium (W3C) recommends lowercase attributes/attribute values in their HTML 4 recommendation.</p>
+<h3>Example</h3>
+
+<pre style="background-color:azure; style="background-color:azure; style="background-color:azure; class="prettyprint notranslate">
+&lt;!DOCTYPE html&gt; 
+&lt;html&gt;
+ 
+   &lt;head&gt; 
+      &lt;title&gt;Align Attribute  Example&lt;/title&gt; 
+   &lt;/head&gt;
+	
+   &lt;body&gt; 
+      &lt;p align = "left"&gt;This is left aligned&lt;/p&gt; 
+      &lt;p align = "center"&gt;This is center aligned&lt;/p&gt; 
+      &lt;p align = "right"&gt;This is right aligned&lt;/p&gt; 
+   &lt;/body&gt;
+	
+&lt;/html&gt;
+</pre>
+</div>
+<a target="_blank" href="f3-1.html" class="w3-btn w3-margin-bottom"><button style="background-color:rgb(115, 126, 226);">Try it Yourself</button> &raquo;</a>
+</div>
+<h2>Core Attributes</h2>
+<p>The four core attributes that can be used on the majority of HTML elements (although not all) are &minus;</p>
+<ul class="list">
+<li>Id</li>
+<li>Title</li>
+<li>Class</li>
+<li>Style</li>
+</ul>
+<h3>The Id Attribute</h3>
+<p>The <b>id</b> attribute of an HTML tag can be used to uniquely identify any element within an HTML page. There are two primary reasons that you might want to use an id attribute on an element &minus;</p>
+<ul class="list">
+<li><p>If an element carries an id attribute as a unique identifier, it is possible to identify just that element and its content.</p></li>
+<li><p>If you have two elements of the same name within a Web page (or style sheet), you can use the id attribute to distinguish between elements that have the same name.</p></li>
+</ul>
+<p>We will discuss style sheet in separate tutorial. For now, let's use the id attribute to distinguish between two paragraph elements as shown below.</p>
+<p><b>Example</b></p>
+<pre style="background-color:azure; style="background-color:azure; class="result notranslate">
+&lt;p id = "html"&gt;This para explains what is HTML&lt;/p&gt;
+&lt;p id = "css"&gt;This para explains what is Cascading Style Sheet&lt;/p&gt;
+</pre>
+<h3>The title Attribute</h3>
+<p>The <b>title</b> attribute gives a suggested title for the element. They syntax for the <b>title</b> attribute is similar as explained for <b>id</b> attribute &minus;</p>
+<p>The behavior of this attribute will depend upon the element that carries it, although it is often displayed as a tooltip when cursor comes over the element or while the element is loading.</p>
+<p><b>Example</b></p>
+
+<pre style="background-color:azure; style="background-color:azure; class="prettyprint notranslate">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+   &lt;head&gt;
+      &lt;title&gt;The title Attribute Example&lt;/title&gt;
+   &lt;/head&gt;
+	
+   &lt;body&gt;
+      &lt;h3 title = "Hello HTML!"&gt;Titled Heading Tag Example&lt;/h3&gt;
+   &lt;/body&gt;
+	
+&lt;/html&gt;
+</pre>
+</div>
+<a target="_blank" href="f3-2.html" class="w3-btn w3-margin-bottom"><button style="background-color:rgb(115, 126, 226);">Try it Yourself</button> &raquo;</a>
+</div>
+<p>Now try to bring your cursor over "Titled Heading Tag Example" and you will see that whatever title you used in your code is coming out as a tooltip of the cursor.</p>
+<h3>The class Attribute</h3>
+<p>The <b>class</b> attribute is used to associate an element with a style sheet, and specifies the class of element. You will learn more about the use of the class attribute when you will learn Cascading Style Sheet (CSS). So for now you can avoid it.</p>
+<p>The value of the attribute may also be a space-separated list of class names. For example &minus;</p>
+<pre style="background-color:azure; style="background-color:azure; class="result notranslate">
+class = "className1 className2 className3"
+</pre>
+<h3>The style Attribute</h3>
+<p>The style attribute allows you to specify Cascading Style Sheet (CSS) rules within the element.</p>
+
+<pre style="background-color:azure; style="background-color:azure; class="prettyprint notranslate">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+   &lt;head&gt;
+      &lt;title&gt;The style Attribute&lt;/title&gt;
+   &lt;/head&gt;
+	
+   &lt;body&gt;
+      &lt;p style = "font-family:arial; color:#FF0000;"&gt;Some text...&lt;/p&gt;
+   &lt;/body&gt;
+	
+&lt;/html&gt;
+</pre>
+</div>
+<a target="_blank" href="f3-3.html" class="w3-btn w3-margin-bottom"><button style="background-color:rgb(115, 126, 226);">Try it Yourself</button> &raquo;</a>
+</div>
+<p>At this point of time, we are not learning CSS, so just let's proceed without bothering much about CSS. Here, you need to understand what are HTML attributes and how they can be used while formatting content.</p>
+<h2>Internationalization Attributes</h2>
+<p>There are three internationalization attributes, which are available for most (although not all) XHTML elements.</p>
+<ul class="list">
+<li>dir</li>
+<li>lang</li>
+<li>xml:lang </li>
+</ul>
+<h3>The dir Attribute</h3>
+<p>The <b>dir</b> attribute allows you to indicate to the browser about the direction in which the text should flow. The dir attribute can take one of two values, as you can see in the table that follows &minus;</p>
+<table class="table table-bordered">
+<tr>
+<th style="text-align:center;">Value</th>
+<th style="text-align:center;">Meaning</th>
+</tr>
+<tr>
+<td>ltr</td>
+<td>Left to right (the default value)</td>
+</tr>
+<tr>
+<td>rtl</td>
+<td>Right to left (for languages such as Hebrew or Arabic that are read right to left)</td>
+</tr>
+</table>
+<p><b>Example</b></p>
+
+<pre style="background-color:azure; style="background-color:azure; class="prettyprint notranslate">
+&lt;!DOCTYPE html&gt;
+&lt;html dir = "rtl"&gt;
+
+   &lt;head&gt;
+      &lt;title&gt;Display Directions&lt;/title&gt;
+   &lt;/head&gt;
+	
+   &lt;body&gt;
+      This is how IE 5 renders right-to-left directed text.
+   &lt;/body&gt;
+	
+&lt;/html&gt;
+</pre>
+</div>
+<a target="_blank" href="f3-4.html" class="w3-btn w3-margin-bottom"><button style="background-color:rgb(115, 126, 226);">Try it Yourself</button> &raquo;</a>
+</div>
+<p>When <i>dir</i> attribute is used within the &lt;html&gt; tag, it determines how text will be presented within the entire document. When used within another tag, it controls the text's direction for just the content of that tag.</p>
+<h3>The lang Attribute</h3>
+<p>The <b>lang</b> attribute allows you to indicate the main language used in a document, but this attribute was kept in HTML only for backwards compatibility with earlier versions of HTML. This attribute has been replaced by the <b>xml:lang</b> attribute in new XHTML documents.</p>
+<p>The values of the <i>lang</i> attribute are ISO-639 standard two-character language codes.</p>
+<p><b>Example</b></p>
+
+<pre style="background-color:azure; style="background-color:azure; class="prettyprint notranslate">
+&lt;!DOCTYPE html&gt;
+&lt;html lang = "en"&gt;
+
+   &lt;head&gt;
+      &lt;title&gt;English Language Page&lt;/title&gt;
+   &lt;/head&gt;
+
+   &lt;body&gt;
+      This page is using English Language
+   &lt;/body&gt;
+
+&lt;/html&gt;
+</pre>
+</div>
+<a target="_blank" href="f3-5.html" class="w3-btn w3-margin-bottom"><button style="background-color:rgb(115, 126, 226);">Try it Yourself</button> &raquo;</a>
+</div>

@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>HTML - Iframes</title>
+<link rel="shortcut icon" sizes="200*200" type="image/x-icon" href="logo1.jpg"></head>
+<body style="background-color: aliceblue;color:rgb(90, 46, 194)">
+    <h2>HTML - Iframes</h2>
+<div class="clearer"></div>
+<p>You can define an inline frame with HTML tag <b>&lt;iframe&gt;</b>. The &lt;iframe&gt; tag is not somehow related to &lt;frameset&gt; tag, instead, it can appear anywhere in your document. The &lt;iframe&gt; tag defines a rectangular region within the document in which the browser can display a separate document, including scrollbars and borders. An inline frame is used to embed another document within the current HTML document.</p>
+<p>The <b>src</b> attribute is used to specify the URL of the document that occupies the inline frame.</p>
+<h2>Example</h2>
+<p>Following is the example to show how to use the &lt;iframe&gt; &minus;</p>
+
+<pre style="background-color:azure; class="prettyprint notranslate">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+   &lt;head&gt;
+      &lt;title&gt;HTML Iframes&lt;/title&gt;
+   &lt;/head&gt;
+	
+   &lt;body&gt;
+      &lt;p&gt;Document content goes here...&lt;/p&gt;
+      
+      &lt;iframe src = "/html/menu.htm" width = "555" height = "200"&gt;
+         Sorry your browser does not support inline frames.
+      &lt;/iframe&gt;
+      
+      &lt;p&gt;Document content also go here...&lt;/p&gt;
+   &lt;/body&gt;
+	
+&lt;/html&gt;
+</pre>
+</div>
+<a target="_blank" href="f13-1.html" class="w3-btn w3-margin-bottom"><button style="background-color:#6ea6db">Try it Yourself</button> &raquo;</a>
+</div>
+<h2>The &lt;Iframe&gt; Tag Attributes</h2>
+<p>Most of the attributes of the &lt;iframe&gt; tag, including <i>name, class, frameborder, id, longdesc, marginheight, marginwidth, name, scrolling, style,</i> and <i>title</i> behave exactly like the corresponding attributes for the &lt;frame&gt; tag.</p>
+<blockquote><p><b>Note</b> &minus; The <i>frameborder</i>, <i>marginwidth</i>, <i>longdesc</i>, <i>scrolling</i>, <i>marginheight</i> attributes deprecated in HTML5. Do not use these attributes.</p></blockquote>
+<table class="table table-bordered">
+<tr>
+<th>Sr.No</th>
+<th style="text-align:center;">Attribute &amp; Description</th>
+</tr>
+<tr>
+<td class="ts">1</td>
+<td>
+<p><b>src</b></p>
+<p>This attribute is used to give the file name that should be loaded in the frame. Its value can be any URL. For example, src = "/html/top_frame.htm" will load an HTML file available in html directory.</p></td>
+</tr>
+<tr>
+<td class="ts">2</td>
+<td>
+<p><b>name</b></p>
+<p>This attribute allows you to give a name to a frame. It is used to indicate which frame a document should be loaded into. This is especially important when you want to create links in one frame that load pages into an another frame, in which case the second frame needs a name to identify itself as the target of the link.</p></td>
+</tr>
+<tr>
+<td class="ts">3</td>
+<td>
+<p><b>frameborder</b></p>
+<p>This attribute specifies whether or not the borders of that frame are shown; it overrides the value given in the frameborder attribute on the &lt;frameset&gt; tag if one is given, and this can take values either 1 (yes) or 0 (no).</p></td>
+</tr>
+<tr>
+<td class="ts">4</td>
+<td>
+<p><b>marginwidth</b></p>
+<p>This attribute allows you to specify the width of the space between the left and right of the frame's borders and the frame's content. The value is given in pixels. For example marginwidth = "10".</p></td>
+</tr>
+<tr>
+<td class="ts">5</td>
+<td>
+<p><b>marginheight</b></p>
+<p>This attribute allows you to specify the height of the space between the top and bottom of the frame's borders and its contents. The value is given in pixels. For example marginheight = "10".</p></td>
+</tr>
+<tr>
+<td class="ts">6</td>
+<td>
+<p><b>height</b></p>
+<p>This attribute specifies the height of &lt;iframe&gt;.</p></td>
+</tr>
+<tr>
+<td class="ts">7</td>
+<td>
+<p><b>scrolling</b></p>
+<p>This attribute controls the appearance of the scrollbars that appear on the frame. This takes values either "yes", "no" or "auto". For example scrolling = "no" means it should not have scroll bars.</p></td>
+</tr>
+<tr>
+<td class="ts">8</td>
+<td>
+<p><b>longdesc</b></p>
+<p>This attribute allows you to provide a link to another page containing a long description of the contents of the frame. For example longdesc = "framedescription.htm"</p></td>
+</tr>
+<tr>
+<td class="ts">9</td>
+<td>
+<p><b>width</b></p>
+<p>This attribute specifies the width of &lt;iframe&gt;.</p></td>
+</tr>
+<tr>
+</table>
+</body>
+</html>
